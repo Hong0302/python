@@ -1,0 +1,20 @@
+a = int(input("a="))
+b = int(input("b="))
+c = int(input("c="))
+d = int(input("d="))
+e = int(input("e="))
+f = int(input("f="))
+str_max =[a,b,c,d,e,f]
+def max_mul(a,b,c,d,e,f):
+    maxx=0
+    m=0
+    for i in range(0,len(str_max)):
+        for j in range(0,len(str_max)):
+            if (i==j):
+                continue
+            else:
+                m= str_max[i]*str_max[j]
+            if m>maxx :
+                maxx = m
+    return maxx
+max_mul(a,b,c,d,e,f)
